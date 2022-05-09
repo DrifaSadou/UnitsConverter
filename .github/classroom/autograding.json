@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Vérification des tests",
+      "setup": "",
+      "run": "md5sum ./tests/main.test.js",
+      "input": "",
+      "output": "e033cb5f81a1a2458baf6681002716d3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Fonctionnement de l'API web",
+      "setup": "npm install && cd ./tests && npm install",
+      "run": "cd ./tests && npm test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
