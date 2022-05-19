@@ -79,11 +79,14 @@ app.post('/convert/distance', (req, res) => {
 
   if (unit == "km" && convertTo == "mile") {
     result = convertKmToMile(value);
-  } if (unit == "mile" && convertTo == "km") {
+  } 
+  if (unit == "mile" && convertTo == "km") {
     result = convertMileToKm(value);
-  } if (unit == "mile" && convertTo == "mile") {
+  } 
+  if (unit == "mile" && convertTo == "mile") {
     result = convertMileToMile(value);
-  } if (unit == "km" && convertTo == "km") {
+  } 
+  if (unit == "km" && convertTo == "km") {
     result = convertKmToKm(value);
   }
 
