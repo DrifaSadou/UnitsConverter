@@ -103,11 +103,14 @@ app.post('/convert/temperature', (req, res) => {
 
   if (unit == "farenheit" && convertTo == "celcius") {
     result = convertFarenheitToCelcius(value);
-  } if (unit == "celcius" && convertTo == "farenheit") {
+  } 
+  if (unit == "celcius" && convertTo == "farenheit") {
     result = convertCelciusToFarenheit(value);
-  } if (unit == "celcius" && convertTo == "celcius") {
+  } 
+  if (unit == "celcius" && convertTo == "celcius") {
     result = convertCelciusToCelcius(value);
-  } if (unit == "farenheit" && convertTo == "farenheit") {
+  } 
+  if (unit == "farenheit" && convertTo == "farenheit") {
     result = convertFarenheitToFarenheit(value);
   }
 
